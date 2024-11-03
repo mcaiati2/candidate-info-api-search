@@ -1,7 +1,6 @@
 export const searchGithub = async (query: string) => {
   try {
     const token = import.meta.env.VITE_GITHUB_TOKEN;
-    console.log('GitHub Token:', token);
 
     if (!token) {
       throw new Error('GitHub token is undefined. Please check your .env file.');
